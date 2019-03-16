@@ -1,0 +1,109 @@
+/*
+* 皇家蓝：#4169E1
+* 中等紫色：#9370DB
+*/
+
+
+.float{
+	animation: titleAni 2s;
+	width:100%;
+	height:100%;
+	text-align: center;
+	padding-bottom: 5%;
+	background-image: url(../images/bg1.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding-top: 5%;
+	align-content: center;
+	position: absolute;
+	top:0px;
+	z-index: 10;
+}
+
+.titleText{
+	align-self: center;
+	color:white;
+	text-shadow: 5px 5px 5px #000;
+	font-size: 4.5em;
+	font-weight:900;
+}
+
+.titleTab{
+	text-align: center;
+	border-width: 0px;
+	width:100%;
+	height: 100%;
+	right:25px;
+	opacity:0.9;
+}
+
+.logo tr{
+	line-height: 50px;
+}
+
+.logo img{
+	height:25em;
+	width:25em;;
+}
+
+.body{
+	position:relative;
+	top:1080px;
+	display: table;
+	width: 100%;
+}
+
+.myExt{
+	background-color: white;
+	height: 500px;
+	left:50px;
+}
+
+/*奇数块标题（白底）*/
+.OddTitle{
+	font-size: 2.5em;
+	color: #9370DB;
+}
+
+/*偶数块标题（紫底）*/
+.EvenTitle{
+	font-size: 2.5em;
+	color: #fff;
+}
+
+/*奇数块列表（白底）*/
+.OddList{
+	font-size: 1em;
+	color: #9370DB;
+}
+
+/*偶数块列表（紫底）*/
+.EvenList{
+	font-size: 1em;
+	color: #fff;
+}
+
+.card{
+	width:100%;
+	padding: 25px;
+}
+
+.EvenDiv{
+	background: linear-gradient(#9370DB, #3366FF);
+}
+
+.contact{
+	color: #fff;
+	font-size: 1.25em;
+	line-height: 5px;
+}
+
+.foot{
+	height:50px;
+	position: relative;
+	background-color: #B79DEC;
+}
+
+.list{
+	animation: listAni 5s;
+}

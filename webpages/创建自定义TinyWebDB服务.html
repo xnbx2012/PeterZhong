@@ -1,0 +1,602 @@
+﻿
+<!-- saved from url=(0119)file:///E:/Zhonglang/AppInventorExtension/%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89TinyWebDB%E6%9C%8D%E5%8A%A1.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" version="XHTML+RDFa 1.0" dir="ltr" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" class="js translated-ltr"><head profile="http://www.w3.org/1999/xhtml/vocab"><link rel="icon" href="icon.png" type="image/x-icon" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta about="/front_page" property="sioc:num_replies" content="0" datatype="xsd:integer">
+    <meta content="Front Page" about="/front_page" property="dc:title">
+    <meta name="Generator" content="Drupal 7 (http://drupal.org)">
+    <link type="text/css" rel="stylesheet" href="./创建自定义TinyWebDB服务_files/superfish.css" media="all">
+    <link type="text/css" rel="stylesheet" href="./创建自定义TinyWebDB服务_files/reset.css" media="all">
+    <link type="text/css" rel="stylesheet" href="./创建自定义TinyWebDB服务_files/colors.css" media="all">
+    <link type="text/css" rel="stylesheet" href="./创建自定义TinyWebDB服务_files/layout.css" media="all">
+    <title>创建自定义TinyWebDB服务</title>
+    <style>
+      body{
+      background: url("http://ai2.appinventor.mit.edu/images/squairy_light.png") repeat scroll center top;
+      margin-top:0;
+      }
+      #page{
+      width: 960px;
+      margin: 0 auto;
+      }
+      #branding, #menu-bar, #create-button,#region-create{
+      display: inline-block;
+
+      }
+      #branding{
+      width:25%;
+      margin:0;
+      }
+
+      #top_bar, #top_bar_background {
+      top:0;
+      min-height: 40px;
+      width:100%;
+      margin-bottom: 4px;
+      padding-right: 0px;
+      padding-left: 0px;
+      background-color: #f2f2f2;
+      background-image: -moz-linear-gradient(top, #f2f2f2, #f3f3f3);
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#f3f3f3));
+      background-image: -webkit-linear-gradient(top, #f2f2f2, #f3f3f3);
+      background-image: -o-linear-gradient(top, #f2f2f2, #f3f3f3);
+      background-image: linear-gradient(to bottom, #f2f2f2, #f3f3f3);
+      background-repeat: repeat-x;
+      border: 1px solid #d4d4d4;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+      *zoom: 1;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+      position: relative;
+      }
+
+      #top_bar, #top_bar_background{
+      width:100%;
+      height: 70px;
+      /*position:absolute;*/
+      margin:0 auto;
+      left:0;
+      right:0;
+      top:0;
+      }
+
+      #header{
+      width:960px;
+      margin:0 auto;
+      height:50px;
+      position: relative;
+      }
+      /* LOGO */
+      #logo {
+      margin: 8px 4px 4px 4px;
+      float: left;
+      padding: 0 20px;
+
+      }
+      #logo img{
+      /*background: url(../images/logo_text.png) no-repeat;*/
+      width: 180px;
+      height: 40px;
+      display: block;
+      }
+      #logo img:hover {
+      -webkit-filter: drop-shadow(0px 0px 3px #eee);
+      filter:         drop-shadow(0px 0px 3px #eee);
+      }
+
+      button {
+      border-radius:0 !important;
+      color:#FFF;
+      border:none;
+      padding: 0.5em 1em;
+      }
+      button:hover{
+      color:#FFF;
+      border:none;
+      border-radius:0 !important;
+      }
+
+      #branding, #create-button, #region-create, #menu-bar li{
+      display: block;
+      }
+/*
+      #menu-bar{
+      margin: 0;
+      padding-top:10px;
+      position: absolute;
+      top: 0;
+      }
+*/
+      #menu-bar li{
+      margin:0;
+
+      }
+      #menu-bar li a{
+      font-family: 'Roboto Light', Helvetica, sans-serif;
+      font-weight:300;
+      font-size: 22px;
+      text-decoration: none;
+      color: #3D3D3D;
+/*      background:transparent !important; */
+      border-radius:0 !important;
+      display: block;
+      line-height: 2.5em;
+      padding: 0 1em;
+      white-space: nowrap;
+      }
+      #menu-bar li a.active{
+      color: #000;
+      }
+      #menu-bar li a:hover{
+      color: #8fc202;
+      }
+      .create-button{
+      float:right;
+      margin:8px 25px 10px 10px;
+      }
+      .create-button button:hover{
+      cursor: pointer;
+      background: #ffa033;
+      }
+      .create-button button{background: #FF8800 !important;
+      border: none !important;
+      color: #FFF;
+      font-weight: 300;
+      border-radius: 0;
+      font-family: 'Roboto',Helvetica,Arial,sans-serif;
+      font-size: 20px;
+      }
+      #content-column {
+      background: #F7F9F2;
+      border-radius: 2px;
+      margin-top: 0px;
+      padding: 15px 20px;
+      }
+      footer{
+      background-color: #e3e1df;
+      color: #010101;
+      padding: 20px 0;
+      margin-top: 25px;
+      }
+      /*################TYPOGRAPHY##################*/
+      /* html elements */
+      html {
+      font-size: 81.3%; /* 16px x 81.3% = 13px */
+      }
+      body {
+      font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+      line-height: 1.6em;
+      margin: 0;
+      padding: 0;
+      }
+      /* Sizes match proper font scaling. */
+      h1, h2, h3, h4, h5, h6 {
+      font-weight: 400;
+      line-height: 1em;
+      padding: 0;
+      margin: 24px 0 12px 0;
+      }
+      h1 { font-size: 2.153em; } /* 28px */
+      h2 { font-size: 1.692em; } /* 22px */
+      h3 { font-size: 1.385em; } /* 18px */
+      h4 { font-size: 1.231em; } /* 16px */
+      h5 { font-size: 1.077em; } /* 14px */
+      h6 { font-size: 1em; }
+      img,
+      a img {
+      border:none;
+      }
+      img {
+      max-width: 100%;
+      height: auto;
+      }
+      p {
+      margin: 0 0 1.5em;
+      padding: 0;
+      }
+      em,
+      dfn {
+      font-style: italic;
+      }
+      ins {
+      border-bottom: none;
+      text-decoration: none;
+      }
+      abbr, acronym {
+      border-bottom: 1px dotted;
+      cursor: help;
+      white-space: nowrap;
+      }
+      pre,
+      code,
+      tt,
+      samp,
+      kbd,
+      var {
+      font-size: 0.846em;
+      font-family: Monaco, "DejaVu Sans Mono", monospace, sans-serif; /* Safari hack */
+      }
+      blockquote,
+      q {
+      font-style:italic;
+      quotes:"" "";
+      }
+      blockquote,
+      p {
+      margin: 1.5em 0;
+      }
+      p:first-child,
+      p.first-child {
+      margin-top: 0;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+      content:"";
+      }
+      strong,
+      dfn,
+      caption,
+      th {
+      font-weight: 700;
+      }
+      pre,
+      div.codeblock {
+      background-color: #f5f5f5;
+      border: solid 1px #ddd;
+      border-bottom-color: #ccc;
+      border-right-color: #ccc;
+      padding: 1em;
+      white-space: pre-wrap;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      }
+
+      /* Lists */
+      ul,
+      ol {
+      margin: 0 0 1.5em 1em;
+      padding:0;
+      }
+      .item-list ul,
+      .item-list ol {
+      margin: 0 0 0 1em;
+      padding: 0;
+      }
+      ul ul,
+      ul ol,
+      ol ol,
+      ol ul,
+      .block ul ul,
+      .block ul ol,
+      .block ol ol,
+      .block ol ul,
+      .item-list ul ul,
+      .item-list ul ol,
+      .item-list ol ol,
+      .item-list ol ul {
+      margin-bottom: 0;
+      }
+      ul {
+      list-style-type: disc;
+      }
+      ul ul ul {
+      list-style-type: square;
+      }
+      ol {
+      list-style-type: decimal;
+      }
+      ol ol {
+      list-style-type: lower-alpha;
+      }
+      ol ol ol {
+      list-style-type: lower-roman;
+      }
+      ul ul,
+      ul ul ul ul {
+      list-style-type: circle;
+      }
+      dl {
+      margin: 1em 0;
+      padding: 0;
+      }
+      dt {
+      font-size: 1.231em;
+      }
+      dd {
+      margin: 0 0 0.4em 0;
+      padding: 0 0 0 2em;
+      }
+      dd:last-child {
+      border-bottom: 0;
+      }
+      dl dl {
+      margin-left: 1em;
+      }
+
+      body {
+      font: 13px/1.5 'Roboto','Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif !important;
+      color: #3D3D3D;
+      }
+
+      pre,
+      code {
+      font-family: 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+      }
+
+      hr {
+      border: 0 #ccc solid;
+      border-top-width: 1px;
+      clear: both;
+      height: 0;
+      }
+
+      /* `Headings
+      ----------------------------------------------------------------------------------------------------*/
+
+      h1 {
+      font-size: 20px;
+      line-height: 22px;
+      }
+
+      h2 {
+      font-size: 18px;
+      line-height: 20px;
+      }
+
+      h3 {
+      font-size: 16px;
+      line-height: 18px;
+      }
+
+      h4 {
+      font-size: 14px;
+      line-height: 16px;
+      }
+
+      h5 {
+      font-size: 12px;
+      line-height: 14px;
+      }
+
+      h6 {
+      font-size: 12px;
+      line-height: 14px;
+      }
+
+      /* `Spacing
+      ----------------------------------------------------------------------------------------------------*/
+
+      ol {
+      list-style: decimal;
+      }
+
+      ul {
+      list-style: disc;
+      }
+
+      li {
+      margin-left: 30px;
+      }
+
+      p,
+      dl,
+      hr,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      ol,
+      ul,
+      pre,
+      table,
+      address,
+      fieldset,
+      figure {
+      margin-bottom: 10px;
+      }
+
+      address { font-style: normal; }
+
+
+
+    </style>
+  <link type="text/css" rel="stylesheet" charset="UTF-8" href="./创建自定义TinyWebDB服务_files/translateelement.css"></head>
+
+
+  <body>
+
+    <div id="page" class="container">
+      <header class="clearfix" role="banner">
+        <div id="top_bar">
+          <div id="branding">
+            <div id="logo"><a href="http://appinventor.mit.edu/" title="主页" class="active"><img src="./创建自定义TinyWebDB服务_files/codi_long.png" alt="探索MIT App Inventor徽标"></a></div>
+          </div>
+
+          <div id="menu-bar" class="nav clearfix">
+<nav id="block-superfish-1" class="block block-superfish block-odd block-count-1 block-region-menu-bar menu-wrapper clearfix" role="navigation">
+<ul id="superfish-1" class="sf-menu"><li class="current"><a href="http://appinventor.mit.edu/explore/about-us.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于▾</font></font></a><ul><li><a href="http://appinventor.mit.edu/explore/about-us.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于我们</font></font></a></li><li id="menu-4234-1"><a href="http://appinventor.mit.edu/explore/our-team.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的队伍</font></font></a></li><li id="menu-4233-1"><a href="http://appinventor.mit.edu/explore/sponsors.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">赞助商</font></font></a></li></ul></li><li id="menu-2893-1"><a href="http://appinventor.mit.edu/explore/news-events.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新闻和故事▾</font></font></a><ul><li id="menu-3040-1"><a href="http://appinventor.mit.edu/explore/news-events.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在新闻中</font></font></a></li><li id="menu-3039-1"><a href="http://appinventor.mit.edu/explore/stories.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">故事</font></font></a></li><li id="menu-4429-1"><a href="http://appinventor.mit.edu/explore/team-blog.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">团队博客</font></font></a></li><li id="menu-4074-1"><a href="http://appinventor.mit.edu/explore/app-month-gallery.html" title="当前和过去的MIT App Inventor App本月获奖者画廊"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本月的应用程序</font></font></a></li></ul></li><li id="menu-2894-1"><a href="http://appinventor.mit.edu/explore/resources.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">资源▾</font></font></a><ul><li id="menu-3041-1"><a href="http://appinventor.mit.edu/explore/get-started.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></a></li><li id="menu-3783-1"><a href="http://appinventor.mit.edu/explore/teach.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">教</font></font></a></li><li id="menu-3104-1"><a href="http://appinventor.mit.edu/explore/library.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a></li><li id="menu-3036-1"><a href="http://appinventor.mit.edu/explore/ai2/tutorials.html" title="有关使用MIT App Inventor的教程"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">教程</font></font></a></li><li id="menu-3174-1"><a href="http://appinventor.mit.edu/explore/support.html" title="有关App Inventor版本1的信息"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AI Classic（v1）</font></font></a></li><li id="menu-3038-1"><a href="http://appinventor.mit.edu/explore/resources.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">资源</font></font></a></li><li id="menu-3037-1"><a href="https://groups.google.com/forum/#!forum/mitappinventortest" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论坛</font></font></a></li><li id="menu-3105-1"><a href="http://appinventor.mit.edu/explore/ai2/support/troubleshooting.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">故障排除</font></font></a></li></ul></li></ul>
+          </nav></div>
+
+          <div class="region region-create">
+            <section id="block-block-21" class="block block-block block-odd block-count-2 block-region-create">
+              <div class="block-inner clearfix">
+                <h2 class="block-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建按钮</font></font></h2>
+                <div class="block-content content">
+                  <p><a href="http://ai2.appinventor.mit.edu/" target="new"><button><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建！</font></font></button></a></p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </header>
+
+
+      <div id="columns" class="no-menu-bar" style="margin-top:15px;"><div class="columns-inner clearfix">
+
+
+          <div id="content-column"><div class="content-inner">
+              <section id="main-content" role="main">
+                <div id="content">  <div class="region region-content">
+                    <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                      创建自定义TinyWebDB服务
+                    </font></font></h1>
+                    <p>
+                      <span class="ButtonText"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        TinyWebDB
+                      </font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+                      是一个App Inventor组件，允许您将数据持久存储在Web上的数据库中。</font><font style="vertical-align: inherit;">因为数据存储在网络而不是特定电话上，
+                       </font></font><span class="ButtonText"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        所以TinyWebDB
+                      </font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+                      可用于促进电话和应用之间的通信（例如，多人游戏）。
+                    </font></font></p>
+                    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                      默认情况下，
+                       </font></font><span class="ButtonText"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        TinyWebDB</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+                      组件将数据存储在App Inventor提供的测试服务上，
+                       </font></font><a href="http://tinywebdb.appinventor.mit.edu/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        http：
+                       </font></font></a><font style="vertical-align: inherit;"><span class="ButtonText"><font style="vertical-align: inherit;">//tinywebdb.appinventor.mit.edu/
+                      </font></span><font style="vertical-align: inherit;"> 
+                      。</font><font style="vertical-align: inherit;">此服务有助于测试，但它由所有App Inventor用户共享，并且限制为1000个条目。</font><font style="vertical-align: inherit;">如果您使用它，您的数据最终将被覆盖。
+                    </font></font></p>
+                    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                      对于您编写的大多数应用，您需要创建一个不与其他App Inventor应用和程序员共享的自定义Web服务。</font><font style="vertical-align: inherit;">您无需成为程序员即可 - 只需按照以下说明操作即可在几分钟内完成自己的服务。
+                    </font></font></p>
+                    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                      要创建自己的Web服务，请按照以下说明操作：
+                    </font></font></p>
+                    <ul>
+                      <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        在</font></font><a href="http://code.google.com/appengine/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                          http://code.google.com/appengine/
+                        </font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载App Engine for Python
+                         </font><font style="vertical-align: inherit;">
+                        。</font><font style="vertical-align: inherit;">安装后，单击其图标运行GoogleAppEngineLauncher。
+                      </font></font></li>
+                      <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        下载此
+                         </font></font><a href="http://ai2.appinventor.mit.edu/reference/other/tinywebdbassets/customtinywebdb.zip"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                          示例代码
+                        </font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+                        。</font><font style="vertical-align: inherit;">它是一个zip文件，包含自定义tinywebdb Web服务的源代码
+                        </font></font><br>
+                      </li>
+                      <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        解压缩下载的zip文件。</font><font style="vertical-align: inherit;">它将创建一个名为</font></font><span class="ButtonText"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                          customtinywebdb
+                        </font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的文件夹
+                         </font><font style="vertical-align: inherit;">
+                        。</font><font style="vertical-align: inherit;">您可以根据需要重命名。
+                        </font></font><br>
+                      </li>
+                      <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        在GoogleAppEngineLauncher中，选择“
+                         </font></font><span class="ButtonText"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                          文件”| </font><font style="vertical-align: inherit;">添加现有应用
+                        </font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+                        。</font><font style="vertical-align: inherit;">浏览以设置</font><font style="vertical-align: inherit;">
+                        您刚刚解压缩</font><font style="vertical-align: inherit;">的</font></font><span class="ButtonText"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                          customtinywebdb
+                        </font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件夹</font><font style="vertical-align: inherit;">的路径
+                         </font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">然后单击“运行”按钮。</font><font style="vertical-align: inherit;">这将启动在本地计算机上运行的测试Web服务。
+                      </font></font></li>
+                      <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        您可以通过打开浏览器并输入“localhost：8080”作为URL来测试服务。</font><font style="vertical-align: inherit;">您将看到Web服务的网页界面。</font><font style="vertical-align: inherit;">此服务的最终目标是与使用App Inventor创建的移动应用程序进行通信。</font><font style="vertical-align: inherit;">但该服务为服务提供了一个网页界面，以帮助程序员进行调试。</font><font style="vertical-align: inherit;">您可以手动调用get和store操作，查看现有条目，还可以删除单个条目
+                      </font></font></li>
+                      <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        您的应用尚未在网络上，因此App Inventor应用尚无法访问。</font><font style="vertical-align: inherit;">要实现这一目标，您需要将其上传到Google的App Engine服务器。
+                        </font></font><ul>
+                          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            在GoogleAppEngineLauncher中，选择“
+                             </font></font><span class="ButtonText"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                              信息中心”
+                            </font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+                            。</font><font style="vertical-align: inherit;">输入您的Google帐户信息，您将进入App Engine信息中心。
+                          </font></font></li>
+                          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            选择
+                             </font></font><span class="ButtonText"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                              创建应用程序
+                            </font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+                            。</font><font style="vertical-align: inherit;">您需要指定全局唯一的应用程序标识符。</font><font style="vertical-align: inherit;">请记住应用程序标识符，稍后您将需要它。</font><font style="vertical-align: inherit;">为您的应用程序提供名称，然后单击“
+                             </font></font><span class="ButtonText"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                              创建应用程序”
+                            </font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+                            以进 </font><font style="vertical-align: inherit;">如果您的标识符是唯一的，那么您现在在Google服务器上有一个新的空白应用。
+                          </font></font></li>
+                          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            在本地计算机上打开文本编辑器，然后</font><font style="vertical-align: inherit;">
+                            在</font><span class="ButtonText"><font style="vertical-align: inherit;">
+                              解</font></span><font style="vertical-align: inherit;"> 
+                            压缩</font><font style="vertical-align: inherit;">的
+                             </font><span class="ButtonText"><font style="vertical-align: inherit;">customtinywebdb
+                            </font></span><font style="vertical-align: inherit;">文件夹中</font><font style="vertical-align: inherit;">打开文件
+                             </font></font><span class="ButtonText"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                              app.yaml
+                            </font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">修改第一行，以便应用程序与您在Google上设置的应用程序标识符匹配。
+                          </font></font><span class="ButtonText"><font style="vertical-align: inherit;"></font></span><font style="vertical-align: inherit;"></font></li>
+                          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            在GoogleAppEngineLauncher中，选择“
+                             </font></font><span class="ButtonText"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                              部署”，
+                            </font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+                            然后按照部署应用程序的步骤操作。
+                          </font></font></li>
+                        </ul>
+                      </li>
+                      <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        测试您的应用是否在网络上运行。</font><font style="vertical-align: inherit;">在浏览器中，输入myapp.appspot.com，仅将您的应用程序标识符替换为“myapp”。</font><font style="vertical-align: inherit;">该应用程序应与在本地测试服务器上运行时的外观相同。</font><font style="vertical-align: inherit;">只有现在，它才能上网，您可以从App Inventor for Android应用程序访问它。
+                      </font></font></li>
+                    </ul>
+                    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                      您的App Inventor应用程序可以使用您的新服务存储和检索数据。</font><font style="vertical-align: inherit;">只需执行以下操作：
+                    </font></font></p>
+                    <ul>
+                      <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        将TinyWebDB组件拖入组件设计器。
+                      </font></font></li>
+                      <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        将ServiceURL属性从默认的</font></font><a href="http://tinywebdb.appinventor.mit.edu/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                          http://tinywebdb.appinventor.mit.edu/
+                        </font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修改
+                         </font><font style="vertical-align: inherit;">
+                        为您的Web服务。
+                      </font></font></li>
+                      <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        任何StoreValue操作（块）都将在您的服务中存储数据，任何GetValue操作都将从您的服务中检索。</font></font></li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+          </div></div>
+      </div></div>
+
+      <footer role="contentinfo">
+        <div class="region region-footer">
+          <div id="block-block-3" class="block block-block block-odd block-count-8 block-region-footer">
+            <div class="block-inner clearfix">
+              <div class="block-content content no-title">
+                <p style="text-align: center;"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank"><img alt="知识共享许可" src="./创建自定义TinyWebDB服务_files/88x31.png"></a> <br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                  本作品采用</font></font><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" class="ext" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">知识共享署名 - 相同方式共享3.0 Unported许可协议授权</font></font></a><span class="ext"></span></p>
+                <p style="text-align: center;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">©2012-2013 </font></font><a href="http://web.mit.edu/" class="ext" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">麻省理工学院</font></font></a><span class="ext"></span></p>
+                <p style="text-align: center;"><a href="http://appinventor.mit.edu/explore/contact"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">联系我们</font></font></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 183px; display: none; top: 110px; position: absolute;
+                  left: 924px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table>
+
+<div id="Vidown_extension_alhnopeoagjmjfgcbnokcnagkecgdcdh" style="display: none;"></div><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./创建自定义TinyWebDB服务_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div><div id="vidown_float_panel_div" style="display: none;"><a id="vidown_float_panel_download" title="用【维棠】下载视频"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">棠维下载</font></font></a><span id="vidown_float_panel_sep"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|</font></font></span><input type="button" value=" " id="vidown_float_panel_close" title="关闭"></div><div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>

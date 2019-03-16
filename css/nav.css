@@ -1,0 +1,52 @@
+/*导航栏动画和样式*/
+.nav {
+	margin-bottom: 48px;
+	position: fixed;
+	z-index: 50;
+	width: 100%;
+}
+.nav ul {
+	*zoom: 1;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: rgba(255,255,255,0);
+}
+
+.nav ul:before,
+.nav ul:after {
+	content: "";
+	display: table;
+}
+.nav ul:after {
+	clear: both;
+}
+.nav ul > li {
+	float: left;
+	position: relative;
+}
+.nav a {
+	display: block;
+	padding: 10px 20px;
+	line-height: 1.2em;
+	color: #fff;
+	border-left: 1px solid #fff;
+	font-size: 2em;
+	text-decoration:none
+}
+.nav a:hover {
+	text-decoration: none;
+	background: rgba(0,0,0,0.5);
+}
+.nav li ul {
+	background: rgba(0,0,0,0.5);
+}
+.nav li ul li {
+	width: 200px;
+}
+.nav li ul a {
+	border: none;
+}
+.nav li ul a:hover {
+	background: rgba(0, 0, 0, 0.2);
+}

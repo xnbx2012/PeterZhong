@@ -1,0 +1,224 @@
+﻿<!doctype html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animation.css">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<link href="css/materialize.css" rel="stylesheet">
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+<title>PeterZhong的个人主页</title>
+</head>
+
+<body>
+
+<!--头部首页开始-->
+<div class="header">
+	<!--导航栏!-->
+	<div class="nav nav5" id="nav">
+			<ul>
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">软件下载</a>
+					<ul>
+						<li><a href="化疗助手主页/CAindex.html">化疗助手</a></li>
+						<li><a id="face tooltipped" class="face tooltipped" href="javascript:void(0)" data-position="right" data-delay="50" data-tooltip="敬请期待！正在开发中。。。">人脸密码本</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0)">开发文档</a>
+					<ul>
+						<li><a href="#zhDoc">AI2中文文档</a></li>
+						<li><a href="#enDoc">AI2英文文档</a></li>
+						<li><a href="#aiDoc">AI2原创文档</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0)">拓展插件</a>
+					<ul>
+						<li><a href="#transExt">翻译插件</a></li>
+						<li><a href="#myExt">我的插件</a></li>
+						<li><a href="#">插件开发</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0)">更多内容</a>
+					<ul>
+						<li><a href="#contact">联系方式</a></li>
+						<li><a href="old.index.html">测试网页</a></li>
+						<li><a href="https://xnzxzhmr.gitee.io/fubuki">级刊投稿</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	<!--标题栏!-->
+	<div class="float">
+   		<table class="titleTab" style="border-width: 0px;">
+   			<tr class="logo" style="text-align: center;">
+   				<td><img src="images/icon.png" class="logo"/></td>
+   			</tr>
+   			<tr style="text-align: center;">
+   				<td class="title"><span class="titleText">Peter Zhong 至繁至简</span></td>
+   			</tr>
+   		</table>
+	</div>
+</div>
+<!--头部首页结束!-->
+
+
+<!--主体部分开始!-->
+<div class="body" id="body">
+	<!--我的拓展插件!-->
+	<a name="myExt"></a>
+	<div class="card">
+		<ul class="collection with-header">
+			<li class="collection-header"><h3 class="OddTitle">我开发的拓展插件</h3></li>
+			<blockquote>我自己开发了一些APP Inventor的拓展插件，欢迎使用</blockquote>
+			<li class="list"><a href="webpages/colorExtension.html" class="collection-item OddList">颜色拓展插件（英文说明文档）</a></li><br/>
+				<p>用于将APP Inventor颜色、RGB颜色和16进制颜色进行互转</p>
+			<li class="list"><a href="webpages/Security/SecurityExtension_zh.html" class="collection-item OddList">安全拓展组件</a></li><br/>
+				<p>用于进行MD5加密、SHA1、SHA256加密、RSA和AES加密、BASE64编码解码等操作，持续更新中。。。。。。</p>
+			<li class="list"><a href="webpages/Security/SecurityExtension.html" class="collection-item OddList">Security Extension</a></li><br/>
+		</ul>
+	</div>
+
+	<!--翻译拓展组件!-->
+	<a name="transExt"></a>
+	<div class="card EvenDiv">
+		<ul class="collection with-header">
+			<li class="collection-header"><h3 class="EvenTitle">AppInvnetor拓展插件</h3></li>
+			<blockquote style="color:#fff;">这是我翻译的一些外文网站上面的扩展插件目录，敬请查看，点击即可访问详情页面</blockquote>
+			<li class="list"><a href="https://mp.weixin.qq.com/s/hgzRUl_SrpTcVfgqAei-eQ" class="collection-item EvenList">FAB浮动按钮扩展插件</a></li><br/>
+			<li class="list"><a href="https://mp.weixin.qq.com/s/t1NgT7LM8nv8VohR-zbuQA" class="collection-item EvenList">闪光灯扩展插件</a></li><br/>
+			<li class="list"><a href="https://mp.weixin.qq.com/s/gEaEO4BKOfPD8XtzNPJB4w" class="collection-item EvenList">侧边栏扩展插件</a></li><br/>
+			<li class="list"><a href="https://mp.weixin.qq.com/s/qs0sLjCZxVHn9dBHhFkmQw" class="collection-item EvenList">工具组扩展插件</a></li><br/>
+			<li class="list"><a href="https://mp.weixin.qq.com/s/xLvNl9lC5-9erm52DCaO4Q" class="collection-item EvenList">网页浏览框扩展插件</a></li><br/>
+			<li class="list"><a href="https://mp.weixin.qq.com/s/esW2TmONDFkn4qTVZ-5xUA" class="collection-item EvenList">对话框扩展插件</a></li><br/>
+			<li class="list"><a href="https://aix.colintree.cn/zh/extensions/ScrollArrangementHandlers.html" class="collection-item EvenList">滚动布局管理器扩展插件</a></li><br/>
+			<li class="list"><a href="https://mp.weixin.qq.com/s/aWnG6gLdlwjhVtmZ0HHANw" class="collection-item EvenList">组件动画扩展插件</a></li><br/>
+		</ul>
+	</div>
+
+	<!--自编AI2文档!-->
+	<a name="aiDoc"></a>
+	<div class="card">
+		<ul class="collection with-header">
+			<li class="collection-header"><h3 class="OddTitle">AppInvnetor软件开发</h3></li>
+			<blockquote>这是我自己总结的一些AppInvnetor软件开发的内容</blockquote>
+			<li class="list"><a href="https://mp.weixin.qq.com/s/ofxaPqeVhpaBCKy4Is4JKQ" class="collection-item OddList">如何使用页面交换字串</a></li><br/>
+			<li class="list"><a href="https://mp.weixin.qq.com/s/TLBjE0WLLzNGdRVtfbJ_DA" class="collection-item OddList">使用Web客户端组件拓展功能</a></li><br/>
+			<li class="list"><a href="https://mp.weixin.qq.com/s/9ChwyUNrHWoG0_GsIMYADA" class="collection-item OddList">如何拓展AppInvnetor的功能</a></li><br/>
+			<li class="list"><a href="https://mp.weixin.qq.com/s/1k6PFZT7HANyUEG3q1PnLQ" class="collection-item OddList">同一屏幕内制作页面切换效果</a></li><br/>
+			<li class="list"><a href="https://mp.weixin.qq.com/s/Q_-yYyr7KPhgiNpgXMLW-w" class="collection-item OddList">除了功能以外，那些需要注意的事</a></li><br/>
+			<li class="list"><a href="https://mp.weixin.qq.com/s/vFaPik4VqDXsTHvmb9GKrw" class="collection-item OddList">百度语音API使用总结</a></li><br/>
+			<li class="list"><a href="https://mp.weixin.qq.com/s/50kB-ZAqFCT2BoNAkPgq_g" class="collection-item OddList">网络微数据库的大用处</a></li><br/>
+		</ul>
+	</div>
+
+	<!--自编Java文档!-->
+	<a name="javaDoc"></a>
+	<div class="card EvenDiv">
+		<ul class="collection with-header">
+			<li class="collection-header"><h3 class="EvenTitle">Java开发基础知识</h3></li>
+			<blockquote style="color:#fff;">欢迎关注PeterZhong的微信公众号，随时获取最新资讯。这里是我自己总结的Java教程目录，未完待续。。。<i>如有不妥之处，敬请指教！</i></blockquote>
+			<li class="list"><a href="Java基本知识_完整/01Java基础知识.html" class="collection-item EvenList">01Java基础知识</a></li><br/>
+			<li class="list"><a href="Java基本知识_完整/02Java面向对象.html" class="collection-item EvenList">02Java面向对象</a></li><br/>
+			<li class="list"><a href="Java基本知识_完整/03Java变量类型.html" class="collection-item EvenList">03Java变量类型</a></li><br/>
+			<li class="list"><a href="Java基本知识_完整/04Java运算符.html" class="collection-item EvenList">04Java运算符</a></li><br/>
+			<li class="list"><a href="Java基本知识_完整/05值与对象.html" class="collection-item EvenList">05值与对象</a></li><br/>
+			<li class="list"><a href="Java基本知识_完整/06Java的内置类.html" class="collection-item EvenList">06Java的内置类</a></li><br/>
+			<li class="list"><a href="Java基本知识_完整/07Java选择结构.html" class="collection-item EvenList">07Java选择结构</a></li><br/>
+			<li class="list"><a href="Java基本知识_完整/08Java循环结构.html" class="collection-item EvenList">08Java循环结构</a></li><br/>
+			<li class="list"><a href="Java基本知识_完整/09Java注释.html" class="collection-item EvenList">09Java注释</a></li><br/>
+			<li class="list"><a href="Java基本知识_完整/10Java方法.html" class="collection-item EvenList">10Java方法</a></li><br/>
+			<li class="list"><a href="Java基本知识_完整/11Java继承.html" class="collection-item EvenList">11Java继承</a></li><br/>
+			<li class="list"><a href="Java基本知识_完整/12Java修饰符.html" class="collection-item EvenList">12Java修饰符</a></li><br/>
+			<li class="list"><a href="Java基本知识_完整/13重载与重写.html" class="collection-item EvenList">13重载与重写</a></li><br/>
+			<li class="list"><a href="Java基本知识_完整/14Java包.html" class="collection-item EvenList">14Java包</a></li><br/>
+		</ul>
+	</div>
+
+	<!--插件开发文档!-->
+	<div class="card">
+		<!--中文开发文档!-->
+		<a name="zhDoc"></a>
+		<div>
+			<ul class="collection with-header">
+				<li class="collection-header"><h3 class="OddTitle">App Inventor中文翻译文档</h3></li>
+				<blockquote>欢迎关注PeterZhong的微信公众号，随时获取最新资讯。这里有部分AppInventor拓展插件官方文档，敬请查阅！所有文档均已使用Google自动翻译成中文。</blockquote>
+				<li class="list"><a href="webpages/App Inventor开发人员概述.html" class="collection-item OddList">App Inventor开发人员概述</a></li><br/>
+				<li class="list"><a href="webpages/MIT App Inventor Extensions.html" class="collection-item OddList">MIT App Inventor Extensions</a></li><br/>
+				<li class="list"><a href="webpages/如何从MIT源构建App Inventor.html" class="collection-item OddList">如何从MIIT源构建App Inventor</a></li><br/>
+				<li class="list"><a href="webpages/如何添加组件.html" class="collection-item OddList">如何添加组件</a></li><br/>
+				<li class="list"><a href="webpages/如何将属性添加到组件.html" class="collection-item OddList">如何将属性添加到组件</a></li><br/>
+				<li class="list"><a href="webpages/App Inventor Extensions.en.zh-CN.htm" class="collection-item OddList">App Inventor Extensions.en.zh-CN</a></li><br/>
+				<li class="list"><a href="webpages/App Inventor注释处理器.html" class="collection-item OddList">App Inventor注释处理器</a></li><br/>
+				<li class="list"><a href="webpages/App Inventor浏览器客户端.html" class="collection-item OddList">App Inventor浏览器客户端</a></li><br/>
+				<li class="list"><a href="webpages/Eclipse App for App Inventor-zh.html" class="collection-item OddList">Eclipse App for App Inventor</a></li><br/>
+				<li class="list"><a href="webpages/Supporting older and newer devices in App Inventor-zh.html" class="collection-item OddList">Supporting older and newer devices in App Inventor</a></li>
+				<li class="list"><a href="webpages/创建自定义TinyWebDB服务.html" class="collection-item OddList">创建自定义TinyWebDB服务</a></li>
+			</ul>
+		</div>
+		
+		<!--英文原版开发文档!-->
+		<a name="enDoc"></a>
+		<div>
+			<ul class="collection with-header">
+				<li class="collection-header"><h3 class="OddTitle">App Inventor英文原版文档</h3></li>
+				<blockquote>由于Google自动翻译将部分代码、专有名词等错误地翻译成中文，现特将英文原版网页也放上来。<i>以下是未经翻译的内容</i></blockquote>
+				<li class="list"><a href="webpages/App Inventor Developer Overview.html" class="collection-item OddList">App Inventor Developer Overview</a></li><br/>
+				<li class="list"><a href="webpages/How to build App Inventor from the MIT sources.html" class="collection-item OddList">如何从MIIT源码构建App Inventor</a></li><br/>
+				<li class="list"><a href="webpages/How to Add a Component.html" class="collection-item OddList">如何添加组件</a></li><br/>
+				<li class="list"><a href="webpages/How to Add a Property to A Component.html" class="collection-item OddList">如何将属性添加到组件</a></li><br/>
+				<li class="list"><a href="webpages/App Inventor Extensions.htm" class="collection-item OddList">App Inventor Extensions</a></li><br/>
+				<li class="list"><a href="webpages/App Inventor Annotation Processors.html" class="collection-item OddList">App Inventor注释处理器</a></li><br/>
+				<li class="list"><a href="webpages/App Inventor Browser Client.html" class="collection-item OddList">App Inventor浏览器客户端</a></li><br/>
+				<li class="list"><a href="webpages/Eclipse App for App Inventor.html" class="collection-item OddList">Eclipse App for App Inventor</a></li><br/>
+				<li class="list"><a href="webpages/Supporting older and newer devices in App Inventor.html" class="collection-item OddList">Supporting older and newer devices in App Inventor</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!--末尾联系方式!-->
+	<a name="contact"></a>
+	<div class="card EvenDiv">
+		<ul class="collection with-header">
+		<li class="collection-header"><h3 class="EvenTitle">联系方式</h3><br/></li>
+		<p class="contact">开发者联系方式。本网站所有内容，如需转载，请联系开发者（微信公众号），开发者会尽快回复。</p><br/>
+		<p class="contact">开发者电子邮箱：<a href="mailto:xnbx2012@outlook.com" style="color:#D8D8D8">xnbx2012@outlook.com</a></p><br/>
+		<p class="contact">本网站意见反馈：<a href="https://www.wjx.top/jq/29443062.aspx" style="color:#D8D8D8">意见反馈地址</a></p><br/>
+		<table border="1" align="center">
+			<tr>
+				<td><img src="images/offical.jpg" height="250px" width="250px"></td>
+				<td><img src="images/pay.png" height="250px" width="250px"></td>
+				<td><img src="images/qq.png" height="250px" width="250px"></td>
+			</tr>
+			<tr>
+				<td class="contact">微信公众号</td>
+				<td class="contact">微信捐赠</td>
+				<td class="contact">个人QQ号</td>
+			</tr>
+		</table>
+		</ul>
+		
+		
+		
+	
+	<!--页脚部分!-->
+	<div class="footer-copyright foot card" style="height:50px;">
+		©Copyright PeterZhong版权所有 | 如需转载请联系开发者
+	</div>
+</div>
+
+
+</div>
+<!--主体部分结束!-->
+
+</body>
